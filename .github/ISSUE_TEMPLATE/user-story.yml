@@ -1,0 +1,73 @@
+name: User story
+description: New user-facing functionality, written from the user's point of view.
+title: "[HU-XXX] "
+labels: ["type: user story"]
+body:
+  - type: textarea
+    id: story
+    attributes:
+      label: User story
+      description: "As a [role], I want [action], so that [benefit]."
+      placeholder: "Como cliente, quiero ..., para ..."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Verifiable conditions, as a checklist or in Given / When / Then form.
+      value: |
+        - [ ] Given ..., when ..., then ...
+    validations:
+      required: true
+  - type: dropdown
+    id: epic
+    attributes:
+      label: Epic
+      options:
+        - E1 Cuentas y perfiles
+        - E2 Catálogo y disponibilidad
+        - E3 Cotizador por reglas
+        - E4 Reserva y confirmación
+        - E5 Asignación de cuidadores
+        - E6 Bitácora del turno
+        - E7 Notificaciones
+        - E8 Pagos
+        - E9 Panel administrativo
+        - E10 Gestión de cuidadores
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority (MoSCoW)
+      options: ["Must", "Should", "Could", "Won't"]
+    validations:
+      required: true
+  - type: textarea
+    id: personal-data
+    attributes:
+      label: Personal or health data involved
+      description: Which personal or health data does this story read or write, and which roles may see it?
+      placeholder: "e.g. patient medications; visible to the assigned caregiver and the patient's client"
+    validations:
+      required: true
+  - type: input
+    id: references
+    attributes:
+      label: References
+      description: Related ADRs, standards or legal requirements.
+      placeholder: "ADR-004, OWASP ASVS V2, Ley 8968"
+  - type: checkboxes
+    id: definition-of-ready
+    attributes:
+      label: Definition of Ready
+      description: All items must be checked before the story enters a sprint.
+      options:
+        - label: Written as "As a [role], I want [action], so that [benefit]".
+        - label: Has verifiable acceptance criteria.
+        - label: Estimated, and fits in one sprint (8 points or less; otherwise split it).
+        - label: Dependencies are resolved or identified.
+        - label: Personal or health data and the roles that can see it are identified.
+        - label: Has a wireframe or design if it changes a screen.
+        - label: Prioritized by the Product Owner.
