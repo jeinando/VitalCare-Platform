@@ -18,7 +18,7 @@ VitalCare needs one backend API that serves the Flutter app, the web client and 
 | Option | Pros | Cons |
 | --- | --- | --- |
 | C# / ASP.NET Core Web API | Team experience, strong typing, EF Core, built-in Identity and policy-based authorization, OpenAPI support, LTS releases | Heavier than Node for small scripts |
-| Node.js / Next.js API routes (TypeScript) | Reuses the existing WhatsApp chatbot code | Weaker structure for a large domain, serverless limits for background jobs |
+| Node.js / Next.js API routes (TypeScript) | Same language as the public site | Weaker structure for a large domain, serverless limits for background jobs |
 | Firebase (serverless) | Fast start, already used in university projects | Vendor lock-in, NoSQL fits relational data poorly, harder audit and reporting |
 
 ## Decision
@@ -29,5 +29,5 @@ Build the backend as an **ASP.NET Core Web API on the current .NET LTS release**
 
 - Positive: one codebase and one deployment keep operations simple; modules can be extracted into services later if the marketplace demands it.
 - Positive: EF Core migrations, xUnit tests and Swagger give a documented, testable API from day one.
-- Negative: the existing Next.js chatbot stays a separate service and must call the API instead of the database directly.
+- Negative: any future integration (for example a WhatsApp chatbot) must call the API, never the database directly.
 - Negative: module boundaries need discipline; enforce them with architecture tests (for example NetArchTest).
