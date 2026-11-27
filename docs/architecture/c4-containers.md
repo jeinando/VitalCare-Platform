@@ -10,9 +10,9 @@ flowchart TB
 
     subgraph frontends[Front ends]
         public["Public site<br/>Next.js on Vercel<br/>vitalcarecr.com"]
-        portal["Client portal<br/>Next.js on Azure<br/>app.vitalcarecr.com"]
+        portal["Client portal<br/>React + TypeScript SPA<br/>app.vitalcarecr.com"]
         mobile["Mobile app<br/>Flutter, client and caregiver roles"]
-        adminpanel["Admin panel<br/>Next.js on Azure, MFA required<br/>admin.vitalcarecr.com"]
+        adminpanel["Admin panel<br/>React + TypeScript SPA, MFA required<br/>admin.vitalcarecr.com"]
     end
 
     api["Backend API<br/>ASP.NET Core modular monolith<br/>Azure App Service · api.vitalcarecr.com"]
@@ -44,4 +44,4 @@ flowchart TB
     classDef external stroke-dasharray: 4 3
 ```
 
-Related decisions: [ADR-001](../adr/0001-backend-aspnet-core-modular-monolith.md), [ADR-002](../adr/0002-postgresql-primary-database.md), [ADR-003](../adr/0003-single-flutter-app-with-roles.md), [ADR-008](../adr/0008-react-nextjs-portal-and-admin.md), [ADR-007](../adr/0007-azure-cloud-provider.md).
+Related decisions: [ADR-001](../adr/0001-backend-aspnet-core-modular-monolith.md), [ADR-002](../adr/0002-postgresql-primary-database.md), [ADR-003](../adr/0003-single-flutter-app-with-roles.md), [ADR-008](../adr/0008-react-typescript-spa-portal-and-admin.md), [ADR-007](../adr/0007-azure-cloud-provider.md).

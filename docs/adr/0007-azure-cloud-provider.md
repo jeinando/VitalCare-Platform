@@ -2,7 +2,7 @@
 
 **Status**: Accepted · **Date**: 2026-11-26 · **Deciders**: Jacob Tellez
 
-> Note: the client portal and admin panel are now Next.js apps ([ADR-008](0008-react-nextjs-portal-and-admin.md)); they are still hosted on Azure App Service.
+> Note: the client portal and admin panel are now React + TypeScript SPAs ([ADR-008](0008-react-typescript-spa-portal-and-admin.md)), hosted on Azure Static Web Apps instead of App Service. The backend API stays on App Service.
 
 ## Context
 

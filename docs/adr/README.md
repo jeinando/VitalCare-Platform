@@ -11,7 +11,7 @@ Each ADR follows the [MADR](https://adr.github.io/madr/) format. An accepted ADR
 | [ADR-005](0005-manual-payments-sinpe-transfer.md) | Manual payments via SINPE Móvil and bank transfer | Accepted |
 | [ADR-006](0006-separate-public-site-blazor-portal-admin.md) | Separate public site, Blazor client portal and Blazor admin panel | Superseded by ADR-008 |
 | [ADR-007](0007-azure-cloud-provider.md) | Azure as the cloud provider | Accepted |
-| [ADR-008](0008-react-nextjs-portal-and-admin.md) | Client portal and admin panel on React with Next.js | Accepted |
+| [ADR-008](0008-react-typescript-spa-portal-and-admin.md) | Client portal and admin panel as React + TypeScript SPAs | Accepted |
 
 ## Follow-up ADRs (during project setup)
 

@@ -1,8 +1,8 @@
 # ADR-006: Separate public site, Blazor client portal and Blazor admin panel
 
-**Status**: Superseded by [ADR-008](0008-react-nextjs-portal-and-admin.md) · **Date**: 2026-11-26 · **Deciders**: Jacob Tellez
+**Status**: Superseded by [ADR-008](0008-react-typescript-spa-portal-and-admin.md) · **Date**: 2026-11-26 · **Deciders**: Jacob Tellez
 
-> The subdomain split below still applies. The choice of Blazor for the client portal and admin panel was replaced by React with Next.js in ADR-008.
+> The subdomain split below still applies. The choice of Blazor for the client portal and admin panel was replaced by React + TypeScript SPAs in ADR-008.
 
 ## Context
 
