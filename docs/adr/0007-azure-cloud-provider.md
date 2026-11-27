@@ -2,6 +2,8 @@
 
 **Status**: Accepted · **Date**: 2026-11-26 · **Deciders**: Jacob Tellez
 
+> Note: the client portal and admin panel are now Next.js apps ([ADR-008](0008-react-nextjs-portal-and-admin.md)); they are still hosted on Azure App Service.
+
 ## Context
 
 The API, the two Blazor apps, PostgreSQL, file storage for receipts and quote PDFs, and secrets need a host. One person operates everything, so managed backups, patching and monitoring matter more than the lowest possible price. The public Next.js site already targets Vercel.
