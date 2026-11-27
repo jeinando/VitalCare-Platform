@@ -13,8 +13,8 @@ Planning and documentation (Release 1). No application code yet.
 | Backend API | C# / ASP.NET Core, modular monolith | [ADR-001](docs/adr/0001-backend-aspnet-core-modular-monolith.md) |
 | Database | PostgreSQL (Azure Flexible Server) | [ADR-002](docs/adr/0002-postgresql-primary-database.md) |
 | Mobile app | Flutter, one app with client and caregiver roles | [ADR-003](docs/adr/0003-single-flutter-app-with-roles.md) |
-| Client portal and admin panel | Blazor | [ADR-006](docs/adr/0006-separate-public-site-blazor-portal-admin.md) |
-| Public site | Next.js (existing vitalcarecr.com) | [ADR-006](docs/adr/0006-separate-public-site-blazor-portal-admin.md) |
+| Client portal and admin panel | React + TypeScript (Vite) | [ADR-008](docs/adr/0008-react-typescript-spa-portal-and-admin.md) |
+| Public site | Next.js (existing vitalcarecr.com) | [ADR-008](docs/adr/0008-react-typescript-spa-portal-and-admin.md) |
 | Hosting | Azure | [ADR-007](docs/adr/0007-azure-cloud-provider.md) |
 
 ## Documentation

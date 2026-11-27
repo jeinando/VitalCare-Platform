@@ -9,8 +9,9 @@ Each ADR follows the [MADR](https://adr.github.io/madr/) format. An accepted ADR
 | [ADR-003](0003-single-flutter-app-with-roles.md) | Single Flutter mobile app with role-based navigation | Accepted |
 | [ADR-004](0004-rules-based-quoting-engine.md) | Rules-based quoting engine, no AI in the MVP | Accepted |
 | [ADR-005](0005-manual-payments-sinpe-transfer.md) | Manual payments via SINPE Móvil and bank transfer | Accepted |
-| [ADR-006](0006-separate-public-site-blazor-portal-admin.md) | Separate public site, Blazor client portal and Blazor admin panel | Accepted |
+| [ADR-006](0006-separate-public-site-blazor-portal-admin.md) | Separate public site, Blazor client portal and Blazor admin panel | Superseded by ADR-008 |
 | [ADR-007](0007-azure-cloud-provider.md) | Azure as the cloud provider | Accepted |
+| [ADR-008](0008-react-typescript-spa-portal-and-admin.md) | Client portal and admin panel as React + TypeScript SPAs | Accepted |
 
 ## Follow-up ADRs (during project setup)
 
@@ -20,4 +21,4 @@ Each ADR follows the [MADR](https://adr.github.io/madr/) format. An accepted ADR
 
 ## New ADR
 
-Copy the structure of an existing ADR, number it sequentially (`0008-short-title.md`), and open a pull request.
+Copy the structure of an existing ADR, number it sequentially (`0009-short-title.md`), and open a pull request.

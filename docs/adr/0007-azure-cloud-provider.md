@@ -2,6 +2,8 @@
 
 **Status**: Accepted · **Date**: 2026-11-26 · **Deciders**: Jacob Tellez
 
+> Note: the client portal and admin panel are now React + TypeScript SPAs ([ADR-008](0008-react-typescript-spa-portal-and-admin.md)), hosted on Azure Static Web Apps instead of App Service. The backend API stays on App Service.
+
 ## Context
 
 The API, the two Blazor apps, PostgreSQL, file storage for receipts and quote PDFs, and secrets need a host. One person operates everything, so managed backups, patching and monitoring matter more than the lowest possible price. The public Next.js site already targets Vercel.
