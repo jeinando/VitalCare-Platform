@@ -1,6 +1,6 @@
 # C4 container view
 
-The Backend API is the single gateway to data: the four front ends and the chatbot never touch PostgreSQL, Blob Storage or Key Vault directly.
+The Backend API is the single gateway to data: the four front ends never touch PostgreSQL, Blob Storage or Key Vault directly.
 
 ```mermaid
 flowchart TB
@@ -23,7 +23,6 @@ flowchart TB
         kv[("Key Vault<br/>secrets, encryption keys")]
     end
 
-    whatsapp["WhatsApp Business API"]:::external
     fcm["Firebase Cloud Messaging"]:::external
 
     client --> public
@@ -32,7 +31,6 @@ flowchart TB
     caregiver --> mobile
     admin --> adminpanel
 
-    public --> whatsapp
     public -- "HTTPS / JSON / JWT" --> api
     portal --> api
     mobile --> api

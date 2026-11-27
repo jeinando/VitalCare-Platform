@@ -4,7 +4,7 @@
 
 ## Context
 
-vitalcarecr.com already exists as a public Next.js site that shows the services and hosts the WhatsApp chatbot. The platform also needs a logged-in web portal for clients and a back office for provider admins. Both handle health and payment data.
+vitalcarecr.com already exists as a public Next.js site that only shows the services; it handles no client data. The platform also needs a logged-in web portal for clients and a back office for provider admins. Both handle health and payment data.
 
 ## Decision drivers
 
@@ -27,12 +27,12 @@ Split the web presence by subdomain:
 
 | Subdomain | App | Technology | Data |
 | --- | --- | --- | --- |
-| vitalcarecr.com | Public site, services, chatbot | Next.js (existing) | No patient data; chatbot creates leads through the API |
+| vitalcarecr.com | Public site, services | Next.js (existing) | No patient data |
 | app.vitalcarecr.com | Client portal | Blazor | Clients and patients, through the API |
 | admin.vitalcarecr.com | Provider and platform admin panel | Blazor | Admin roles only, mandatory MFA |
 | api.vitalcarecr.com | Backend API (ADR-001) | ASP.NET Core | The only component that talks to the database |
 
-The public site links to the portal ("Cotizar" / "Iniciar sesión") and to the app stores. The chatbot stops keeping its own state for bookings and calls the API instead.
+The public site links to the portal ("Cotizar" / "Iniciar sesión") and to the app stores. A WhatsApp chatbot is not part of the MVP; if one is added later, it must go through the API like any other client.
 
 ## Consequences
 
